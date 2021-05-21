@@ -1,0 +1,53 @@
+[18-May-2021 03:16:13 UTC] PHP Parse error:  syntax error, unexpected variable "$db" in /var/www/html/index.php on line 5
+[18-May-2021 03:16:39 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'username'@'172.21.0.5' (using password: YES) in /var/www/html/index.php on line 7
+[18-May-2021 03:16:39 UTC] PHP Stack trace:
+[18-May-2021 03:16:39 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[18-May-2021 03:16:39 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'username', $password = 'password', $database = 'dbname') /var/www/html/index.php:7
+[18-May-2021 03:19:15 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/index.php on line 7
+[18-May-2021 03:19:15 UTC] PHP Stack trace:
+[18-May-2021 03:19:15 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[18-May-2021 03:19:15 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'username', $password = 'password', $database = 'dbname') /var/www/html/index.php:7
+[18-May-2021 03:19:16 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'username'@'172.21.0.4' (using password: YES) in /var/www/html/index.php on line 7
+[18-May-2021 03:19:16 UTC] PHP Stack trace:
+[18-May-2021 03:19:16 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[18-May-2021 03:19:16 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'username', $password = 'password', $database = 'dbname') /var/www/html/index.php:7
+[18-May-2021 03:27:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'username'@'172.21.0.4' (using password: YES) in /var/www/html/index.php on line 7
+[18-May-2021 03:27:52 UTC] PHP Stack trace:
+[18-May-2021 03:27:52 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[18-May-2021 03:27:52 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'username', $password = 'password', $database = 'dbname') /var/www/html/index.php:7
+[20-May-2021 19:58:28 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/index.php on line 7
+[20-May-2021 19:58:28 UTC] PHP Stack trace:
+[20-May-2021 19:58:28 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 19:58:28 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:10:42 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/index.php on line 7
+[20-May-2021 20:10:42 UTC] PHP Stack trace:
+[20-May-2021 20:10:42 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:10:42 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:10:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/index.php on line 7
+[20-May-2021 20:10:42 UTC] PHP Stack trace:
+[20-May-2021 20:10:42 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:10:42 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:10:46 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/index.php on line 7
+[20-May-2021 20:10:46 UTC] PHP Stack trace:
+[20-May-2021 20:10:46 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:10:46 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:10:46 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/index.php on line 7
+[20-May-2021 20:10:46 UTC] PHP Stack trace:
+[20-May-2021 20:10:46 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:10:46 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:29:21 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'docker'@'%' to database 'database' in /var/www/html/index.php on line 7
+[20-May-2021 20:29:21 UTC] PHP Stack trace:
+[20-May-2021 20:29:21 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:29:21 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:30:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'docker'@'%' to database 'database' in /var/www/html/index.php on line 7
+[20-May-2021 20:30:09 UTC] PHP Stack trace:
+[20-May-2021 20:30:09 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:30:09 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:30:45 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /var/www/html/index.php on line 7
+[20-May-2021 20:30:45 UTC] PHP Stack trace:
+[20-May-2021 20:30:45 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:30:45 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'database') /var/www/html/index.php:7
+[20-May-2021 20:34:31 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'docker'@'%' to database 'wrongdatabase' in /var/www/html/index.php on line 7
+[20-May-2021 20:34:31 UTC] PHP Stack trace:
+[20-May-2021 20:34:31 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[20-May-2021 20:34:31 UTC] PHP   2. mysqli_connect($hostname = 'database', $username = 'docker', $password = 'docker', $database = 'wrongdatabase') /var/www/html/index.php:7
