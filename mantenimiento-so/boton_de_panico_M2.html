@@ -1,0 +1,42 @@
+1. Lo primero que debes hacer es crear el archivo /etc/systemd/system/horadeinicio.service e incluir en él el siguiente contenido: 
+
+#INICIO DEL ARCHIVO
+# ***horadeinicio.service*** 
+
+[Unit] 
+Description=Registro de hora de inicio         
+After=multi-user.target 
+
+  
+[Service] 
+Type=simple 
+ExecStart=/home/$USER/horadeinicio.sh 
+User=___REEMPLAZA_ESTO_POR_EL_USUARIO_DEL_SISTEMA___
+WorkingDirectory=___REEMPLAZA_ESTO_POR_LA_CARPETA_HOME_DEL_USUARIO_DEL_SISTEMA___         
+StandardOutput=syslog 
+StandardError=syslog 
+
+[Install] 
+WantedBy=multi-user.target 
+
+#FIN DEL ARCHIVO
+
+
+2. Luego, crear el script /home/$USER/horadeinicio.sh con el siguiente contenido (reemplaza $USER por el usuario del sistema): 
+
+#INICIO DEL ARCHIVO
+
+#!/bin/bash 
+date >> /home/$USER/hora-de-inicio.txt
+
+#FIN DEL ARCHIVO
+
+3. Luego de eso crea un archivo vacío llamado “hora-de-inicio.txt” y darle los permisos necesarios. 
+
+4. Ejecuta sudo systemctl daemon-reload. 
+
+5. Ejecuta sudo systemctl enable horadeinicio.service. 
+
+6. Ejecuta sudo systemctl start horadeinicio.service. 
+
+7. Reinicia la máquina y verificar el archivo “hora-de-inicio.txt”. 
