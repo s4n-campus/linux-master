@@ -1,0 +1,51 @@
+1. Lo primero que debes hacer es crear un archivo de texto con el siguiente contenido:
+
+___INICIO ARCHIVO___
+
+#!/bin/bash
+
+echo "¿Cuál es tu edad?"
+read EDAD
+
+  case $EDAD in
+      20)
+         echo "Tienes 20 años"
+      ;;
+      30)
+         echo "Tienes 30 años"
+      ;;
+      40)
+         echo "Tienes 40 años"
+      ;;
+      50)
+         echo "Tienes 50 años"
+      ;;
+      *)
+	 if [[ $EDAD -gt 20 && $EDAD -lt 50 ]];
+	 	then
+
+		if [[ $EDAD -gt 19 && $EDAD -lt 31 ]];
+			then
+			echo 'Tienes entre 20 y 30 años'
+		fi
+		if [[ $EDAD -gt 29 && $EDAD -lt 41 ]];
+			then
+			echo 'Tienes entre 30 y 40 años'
+		fi
+		if [[ $EDAD -gt 39 && $EDAD -lt 51 ]];
+			then
+			echo 'Tienes entre 40 y 50 años'
+		fi
+	 else
+		echo 'Estás en un rango de edades fuera del soportado'
+       	 fi
+     ;;
+  esac
+
+___FIN ARCHIVO___
+
+Lo ideal es que tenga la extensión ".sh", por ejemplo, read.sh.
+
+2. Luego deberás darle permisos de ejecución con "chmod +x", en este caso sería "chmod +x read.sh".
+
+3. Finalmente lo puedes ejecutar con ./read.sh, bash read.sh o sh read.sh.
