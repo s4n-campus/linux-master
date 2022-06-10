@@ -1,0 +1,40 @@
+1. Lo primero que debes hacer es crear un archivo de texto con el siguiente contenido:
+
+___INICIO ARCHIVO___
+
+#!/bin/sh
+clear
+SALIR=0
+OPCION=0
+while [ $SALIR -eq 0 ]; do
+   echo "A continuación se muestran las opciones que puedes elegir:"
+   echo "1) Decir hola"
+   echo "2) Decir adiós"
+   echo "3) Salir"
+   echo ""
+   echo "Introduce el número correspondiente a la opción elegída:"
+   sleep 1
+   read OPCION
+   case $OPCION in
+       1)
+	   echo ""
+           echo "Seleccionaste decir hola"
+           echo "" ;;
+       2)
+           echo ""
+           echo "Seleccionaste deicr adiós"
+           echo "" ;;
+       3)
+           SALIR=1 ;;
+       *)
+         echo "Opcion erronea";;
+   esac
+done
+
+___FIN ARCHIVO___
+
+Lo ideal es que tenga la extensión ".sh", por ejemplo, read.sh.
+
+2. Luego deberás darle permisos de ejecución con "chmod +x", en este caso sería "chmod +x read.sh".
+
+3. Finalmente lo puedes ejecutar con ./read.sh, bash read.sh o sh read.sh.
